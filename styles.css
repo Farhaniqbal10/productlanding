@@ -1,0 +1,222 @@
+:root {
+    --white: hsl(0, 99%, 100%);
+    --text: hsl(0, 99%, 0%);
+    --pale: hsl(0, 1%, 64%);
+    --red:hsl(0, 100%, 55%);
+  }
+  
+  * {
+    margin:0;
+  }
+  
+  body {
+    background-color: var(--pale);
+  }
+  
+  #header-img {
+    width: 60px;
+    object-fit:contain;
+  }
+  
+  #nav-bar {
+    display:flex;
+    flex-direction:column;
+  justify-content:spaace-around;
+  align-items:center;
+  position:fixed;
+  width: 100%;
+  top: 0;
+  background-color : var(--white);
+  padding: 10px;
+  
+  }
+  
+  .nav-links {
+    display:flex;
+    list-style:none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    padding:0 10px;
+  }
+  
+  .logo-container {
+    display:flex;
+    align-items:center;
+  }
+  
+  .the-product {
+    font-size:25px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family:Tahoma, sans-serif;
+  }
+  
+  #email-section {
+    margin-top:100px;
+  }
+  
+  input {
+    padding:8px;
+    border-radius: 5px;
+    border : 1px solid var(--red);
+  }
+  
+  #submit {
+    background-color: var(--red);
+    color: var(--white);
+    cursor: pointer;
+  }
+  
+  section::before {
+  display:block;
+  content:"";
+  margin-top:-100px;
+  height:100px;
+  visibility: hidder;
+  pointer-events:none;
+  }
+  
+  section {
+  margin: 40px 20px;
+  text-align: center;
+  }
+  
+  h2 {
+    font-family: "Tahoma";
+    margin-bottom:10px;
+  }
+  
+  .icon {
+    color: var(--red);
+    margin:right;
+  }
+  
+  #features {
+    text-align:left;
+    max-width:800px;
+    margin:auto;
+  }
+  
+  .features {
+  display: flex;
+    align-items:center;
+    justify-content:center;
+    margin:20px;
+    font-family:Tahoma;
+  }
+  
+  #video {
+    width :100%;
+  }
+  
+  .product-image {
+    width:100%;
+    margin: auto;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border:1px solid var(--text);
+    border-radius:10px 10px 0 0;
+  }
+  
+  .product1{
+    background-image: url("https://images.pushsquare.com/games/ps5/god_of_war_2/cover_large.jpg");
+  }
+  
+  .product2 {
+    background-image:url("https://www.withashleyandco.com/wp-content/uploads/2020/11/spiderman-miles-morales-1210x1536.jpg");
+  }
+  
+  .product3 {
+    background-image:url("https://th.bing.com/th/id/OIP.OAXSBaBKMl-HL_Mhw4IlfgAAAA?pid=ImgDet&rs=1");
+  }
+  
+  .card {
+  background-color: var(--white);
+  border-radius: 10px;
+  width:90%;
+  margin:auto;
+  margin-bottom: 10px;
+  }
+  
+  .inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:10px;
+  }
+  
+  .content {
+    font-family:"Tahoma";
+    color:var(--text);
+    margin-bottom:10px;
+  }
+  
+  .flex {
+  display:flex;
+  align-items:center;
+  margin-bottom:10px;
+  }
+  
+  .price{
+  margin-right:20px;
+  font-size:30px;
+  font-family:"Tahoma";
+  color:var(--text);
+  }
+  
+  .author{
+    font-family:"Tahoma";
+    letter-spacing:5px;
+    color:var(--text);
+    text-transform:uppercase;
+  
+  }
+  
+  .header{
+    font-family:"Tahoma";
+    margin:10px 0;
+    color:var(--text); 
+  }
+  
+  .add {
+    background-color : var(--red);
+    cursor:pointer;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    width:100%;
+    color:var(--white);
+    font-family:"Tahoma";
+    font-weight:700;
+    margin-bottom:10px;
+  }
+  
+  @media only screen and (450px < width < 600px) {
+  .card{
+        font-size: 0.85rem;
+    }
+  
+    .product-image {
+      height:400px;
+    }
+  }
+  
+  @media only screen and (450px <=width ) {
+    .card {
+        display:flex;
+        max-width:525px;
+    }
+  
+    .inner-card {
+      width:300px;
+      padding:20px;
+    }
+    .product-image {
+      width:400px;
+      border-radius: 10px 0 0 10px;
+    }
+  }
